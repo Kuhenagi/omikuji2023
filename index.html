@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>年末おみくじ（特に根拠なし）</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div id="omikuji-container">
+    <label for="best_bout">今年のベストバウト：</label>
+    <input type="text" id="best_bout" required><br>
+
+    <label for="next_year_goal">来年の目標：</label>
+    <input type="text" id="next_year_goal" required><br>
+
+    <label for="wishlist">ほしいもの：</label>
+    <input type="text" id="wishlist" required><br>
+
+    <button onclick="drawOmikuji()">おみくじを引く</button>
+    <button onclick="tweetResults()">ツイート</button>
+  </div>
+
+  <div id="result-container"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
